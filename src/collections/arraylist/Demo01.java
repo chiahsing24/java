@@ -5,6 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Demo01 {
+    /**
+     * ArrayList: Introduction
+     *
+     */
     public static void main(String[] args) {
         // Using no-rg constructor
         List list1 = new ArrayList();
