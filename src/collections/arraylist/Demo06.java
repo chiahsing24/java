@@ -1,9 +1,6 @@
 package collections.arraylist;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Demo06 {
@@ -38,5 +35,14 @@ public class Demo06 {
 
         List<Integer> reverseSortedList = sortedList.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
         System.out.println("list1 in asc order: " + reverseSortedList);
+
+        // Array's sorting
+        int[] arr1 = {13, 7, 6, 45, 21, 9, 2, 100};
+        Arrays.sort(arr1);
+        System.out.println("arr1 in ascending order: " + Arrays.toString(arr1));
+
+        Integer[] arr2 = {13, 7, 6, 45, 21, 9, 2, 100};
+        Arrays.sort(arr2, Collections.reverseOrder());
+        System.out.println("arr2 in descending order: " + Arrays.toString(arr2));
     }
 }
